@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -26,22 +26,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">PersonalSite</a>
+                <a asp-page="/Index" class="navbar-brand">Christian Watts</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Bio" onmoveout="hideNavDrop(this)" onmouseover="showNavDrop(this)">Bio</a></li>
+                    <li><a asp-page="/Unimplemented">Skills</a></li>
+                    <li><a asp-page="/Unimplemented">Projects</a></li>
+                    <li><a asp-page="/Unimplemented">This Website</a></li>
+                    <li><a asp-page="/Unimplemented">Interact</a></li>
+                    <li><a asp-page="/Contact">Contact Me</a></li>
                 </ul>
             </div>
         </div>
+        <!-- Here is where the show/hide dropdown info should go -->
+        <p class="nb-dropcontent" id="navdropdown">This is the dropdown content</p>
     </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - PersonalSite</p>
+            <p>&copy; 2018 - Christian Watts</p>
         </footer>
     </div>
 

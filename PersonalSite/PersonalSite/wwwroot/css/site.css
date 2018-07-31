@@ -33,3 +33,7 @@ body {
         display: none;
     }
 }
+
+.nb-dropcontent {
+    display: none;
+}

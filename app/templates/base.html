@@ -1,0 +1,50 @@
+{% extends "empty.html" %}
+{% block meta %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{% block title %}{% endblock %}</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="../static/css/base.css">
+{% endblock %}
+
+{% block js %}
+<script src="../static/js/main.js"></script>
+{% endblock %}
+
+{% block header %}
+<h2>Scroll Down</h2>
+<p>Scroll down to see the sticky effect.</p>
+{% endblock %}
+
+{% block topnav %}
+<a href="{{ url_for('index') }}">
+    <i class="material-icons navicons">home</i>
+</a>
+
+<nav>
+    <button id="menu-btn" class="dropdown">
+        <i class="material-icons navicons">menu</i>
+    </button>
+    <div id="dropdown-content" class="dropdown-content">
+        <ul>
+            <li><a href="{{ url_for('bio') }}">Bio</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('website') }}">This Website</a></li>
+            <li><a href="{{ url_for('interact') }}">Interact</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+        </ul>
+    </div>
+</nav>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <h3>&copy; 2018 Christian Watts</h3>
+</footer>
+{% endblock %}

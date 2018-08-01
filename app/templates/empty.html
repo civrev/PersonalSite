@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+	    {% block meta %}
+	    {% endblock %}
+
+	    {% block css %}
+	    {% endblock %}
+
+	    {% block js %}
+	    {% endblock %}
+    </head>
+
+    <body>
+    	<div class="header">
+	    	{% block header %}
+	    	{% endblock %}
+	    </div>
+
+	    <div class ="topnav" id="topnav">
+	    	{% block topnav %}
+	    	{% endblock %}
+	    </div>
+
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <div class="footer">
+            {% block footer %}
+            {% endblock %}
+        </div>
+
+    </body>
+</html>

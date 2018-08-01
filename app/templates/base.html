@@ -1,19 +1,25 @@
 {% extends "empty.html" %}
-{% block meta %}
+{% block empty_meta %}
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>{% block title %}{% endblock %}</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% block base_meta %}
+{% endblock %}
 {% endblock %}
 
-{% block css %}
+{% block empty_css %}
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="../static/css/base.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+{% block base_css %}
+{% endblock %}
 {% endblock %}
 
-{% block js %}
-<script src="../static/js/main.js"></script>
+{% block empty_js %}
+<script src="{{ url_for('static', filename='js/base.js') }}"></script>
+{% block base_js %}
+{% endblock %}
 {% endblock %}
 
 {% block header %}

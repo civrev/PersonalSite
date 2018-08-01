@@ -62,6 +62,7 @@ body {
 .footer {
 	background-color: #202124;
     overflow: hidden;
+    padding-left: 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
     width: 100%;
     color: #f2f2f2;
@@ -103,6 +104,9 @@ body {
 .dropdown-content ol li{
     height: 72px;
     width: 100%;
+    border-bottom: 3px solid rgba(158,158,158,.3);
+    box-shadow-bottom: 0 4px 8px rgba(0,0,0,.5);
+    padding-top: 22px
 }
 
 .dropdown-content ol li a{

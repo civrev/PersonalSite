@@ -9,7 +9,6 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-	#templates are considered by default in the /templates folder
 	return render_template('index.html', **Index().dict)
 
 @app.route('/bio')
@@ -35,6 +34,20 @@ def interact():
 @app.route('/contact')
 def contact():
 	return render_template('contact.html')
+
+'''
+--------------------------------------------
+Errors and easter eggs
+--------------------------------------------
+'''
+
+@app.errorhandler(404)
+def page_not_found(e):
+	return render_template('404.html')
+
+@app.errorhandler(500)
+def page_not_found(e):
+	return render_template('500.html')
 
 #hello world!
 @app.route('/hw')

@@ -21,6 +21,7 @@ window.onload = function(){
 
 	function showMenu() {
 		if(dropdown.style.display === "none"){
+			window.scrollTo(0, sticky); //origianl navbar pos
 			dropdown.style.display = "flex";
 		}else{
 			dropdown.style.display = "none";

@@ -18,10 +18,8 @@ window.onload = function(){
 
 	function showMenu() {
 		if(dropdown.style.display === "none"){
-			navbar.style.height = "100%";
-			dropdown.style.display = "table-cell";
+			dropdown.style.display = "flex";
 		}else{
-			navbar.style.height = "72px";
 			dropdown.style.display = "none";
 		}
 	}

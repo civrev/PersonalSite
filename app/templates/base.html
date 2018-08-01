@@ -22,25 +22,39 @@
 {% endblock %}
 
 {% block topnav %}
-<a href="{{ url_for('index') }}">
-    <i class="material-icons navicons">home</i>
-</a>
+<div id="topnav" class="topnav">
+    <a href="{{ url_for('index') }}">
+        <i class="material-icons navicons">home</i>
+    </a>
 
-<nav>
-    <button id="menu-btn" class="dropdown">
-        <i class="material-icons navicons">menu</i>
-    </button>
-    <div id="dropdown-content" class="dropdown-content">
-        <ul>
-            <li><a href="{{ url_for('bio') }}">Bio</a></li>
-            <li><a href="{{ url_for('skills') }}">Skills</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-            <li><a href="{{ url_for('website') }}">This Website</a></li>
-            <li><a href="{{ url_for('interact') }}">Interact</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav>
+        <button id="menu-btn" class="dropdown">
+            <i class="material-icons navicons">menu</i>
+        </button>
+        <div id="menu-content" class="menu-content">
+            <ul>
+                <li><a href="{{ url_for('bio') }}">Bio</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('website') }}">This Website</a></li>
+                <li><a href="{{ url_for('interact') }}">Interact</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="dropdown-content" class="dropdown-content content">
+    <ol>
+        <li><a href="{{ url_for('bio') }}">Bio</a></li>
+        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('website') }}">This Website</a></li>
+        <li><a href="{{ url_for('interact') }}">Interact</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+    </ol>
+</div>
+
 {% endblock %}
 
 {% block footer %}
